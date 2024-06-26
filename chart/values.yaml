@@ -1,9 +1,9 @@
 replicaCount: 1
 
 image:
-  repository: rg.fr-par.scw.cloud/staircaze-registry/simple-webapp:latest
+  repository: rg.fr-par.scw.cloud/staircaze-registry/simple-webapp
   pullPolicy: IfNotPresent
-  tag: ""
+  tag: "latest"
 
 imagePullSecrets: []
 nameOverride: ""
