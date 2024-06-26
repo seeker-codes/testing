@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Café pour tous !</title>
+    <title>Cofee pour tous !</title>
     <link rel="stylesheet" href="css/style.css">
 
     <style>
