@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: qjoly/kubernetes-coffee-image
+  repository: rg.fr-par.scw.cloud/staircaze-registry/simple-webapp:latest
   pullPolicy: IfNotPresent
   tag: "simple"
 
