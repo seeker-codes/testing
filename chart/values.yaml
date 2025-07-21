@@ -39,9 +39,9 @@ ingress:
         - path: /
           pathType: Prefix
   tls: []
-  #  - secretName: letsencrypt-simple-app
-  #    hosts:
-  #      - simple.staircaze.com
+    - secretName: letsencrypt-simple-app
+      hosts:
+        - simple.staircaze.com
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
