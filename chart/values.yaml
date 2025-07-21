@@ -1,7 +1,7 @@
 replicaCount: 4
 
 image:
-  repository: rg.fr-par.scw.cloud/staircaze-registry/simple-webapp
+  repository: qjoly/kubernetes-coffee-image
   pullPolicy: IfNotPresent
   tag: "latest"
 
@@ -28,20 +28,20 @@ service:
   port: 80
 
 ingress:
-  enabled: false
+  enabled: true
   className: ""
   annotations: {}
-    # kubernetes.io/ingress.class: nginx
-    # kubernetes.io/tls-acme: "true"
+     kubernetes.io/ingress.class: nginx
+     kubernetes.io/tls-acme: "true"
   hosts:
-    - host: chart-example.local
+    - host: simple.staircaze.com
       paths:
         - path: /
-          pathType: ImplementationSpecific
+          pathType: Prefix
   tls: []
-  #  - secretName: chart-example-tls
+  #  - secretName: letsencrypt-simple-app
   #    hosts:
-  #      - chart-example.local
+  #      - simple.staircaze.com
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
