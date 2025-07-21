@@ -31,7 +31,7 @@ ingress:
   enabled: true
   className: ""
   annotations:
-    cert-manager.io/issuer: "letsencrypt-grafana"
+    cert-manager.io/issuer: "letsencrypt-simple-app"
     nginx.ingress.kubernetes.io/ssl-redirect: "true"    
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
     acme.cert-manager.io/http01-edit-in-place: "true"
