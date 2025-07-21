@@ -38,7 +38,7 @@ ingress:
       paths:
         - path: /
           pathType: Prefix
-  tls: []
+  tls:
     - secretName: letsencrypt-simple-app
       hosts:
         - simple.staircaze.com
